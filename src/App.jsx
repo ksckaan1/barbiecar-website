@@ -93,9 +93,9 @@ function App() {
     }
 
     useEffect(() => {
-        window.onkeydown = (e)=>{
-            if (e.key==="ArrowLeft" && !isPlaying) geriSar()
-            if (e.key==="ArrowRight" && !isPlaying) ileriSar()
+        window.onkeydown = async (e) => {
+            if (e.key === "ArrowLeft" && !isPlaying) await geriSar()
+            if (e.key === "ArrowRight" && !isPlaying) await ileriSar()
         }
     }, []);
 
